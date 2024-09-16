@@ -15,7 +15,11 @@ export default function AppNavigator() {
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="Verificar" component={VerificarScreen} />
+      <Stack.Screen
+        name="Verificar"
+        component={VerificarScreen}
+        options={{ title: "cambio1" }}
+      />
       <Stack.Screen name="Paraderos" component={ParaderosScreen} />
       <Stack.Screen name="Admin" component={AdminScreen} />
     </Stack.Navigator>
